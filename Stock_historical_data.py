@@ -4,10 +4,10 @@ import datetime
 from pathlib import Path    # Import the pathlib library
 
 # Replace 'Stock_symbol' with the stock symbol you are interested in
-symbol = 'PNB.NS'
+symbol = 'CMSINFO.NS'
 
 # Specify the directory path where you want to save the file
-download_directory = Path("D:\Programming\Stock Selections\Stock-Selection-Using-ML\Collect_Stock_Data\Banking_Sector\Private_Bank")  # Replace with your desired directory
+download_directory = Path("D:\Programming\Stock Selections\Stock-Selection-Using-ML\Collect_Stock_Data\IT_Sector")  # Replace with your desired directory
 
 # Calculate the end date as today
 end_date = pd.to_datetime('today').strftime('%Y-%m-%d')
