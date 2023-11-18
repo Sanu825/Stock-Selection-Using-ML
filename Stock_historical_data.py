@@ -7,7 +7,7 @@ from pathlib import Path    # Import the pathlib library
 symbol = 'UPL.NS'
 
 # Specify the directory path where you want to save the file
-download_directory = Path("D:\Programming\Stock Selections\Stock-Selection-Using-ML\Collect_Stock_Data\Top_50")  # Replace with your desired directory
+download_directory = Path("D:\Programming\Stock Selections\Stock-Selection-Using-ML\Collect_Stock_Historical_Data\Banking_Sector")  # Replace with your desired directory
 
 # Calculate the end date as today
 end_date = pd.to_datetime('today').strftime('%Y-%m-%d')
