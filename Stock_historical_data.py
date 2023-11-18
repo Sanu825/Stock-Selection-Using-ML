@@ -13,7 +13,7 @@ download_directory = Path("D:\Programming\Stock Selections\Stock-Selection-Using
 end_date = pd.to_datetime('today').strftime('%Y-%m-%d')
 
 # Calculate the start date as 5 years nearest full calender year
-start_date = (pd.to_datetime('today') - pd.DateOffset(years=5)).replace(month=1, day=1).strftime('%Y-%m-%d')
+start_date = (pd.to_datetime('today') - pd.DateOffset(years=4)).replace(month=1, day=1).strftime('%Y-%m-%d')
 
 # Download historical data from Yahoo Finance for the last 5 years
 stock_data = yf.download(symbol, start=start_date, end=end_date)
