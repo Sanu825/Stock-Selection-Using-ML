@@ -7,7 +7,7 @@ from datetime import datetime, timedelta
 api_key = '7BWY5GGU94GAB627'
 
 # Replace 'AAPL' with the stock symbol you are interested in
-symbols = ['HDB', 'SBI']
+symbols = ['HDB','IBN']
 
 # Specify the parent directory path where you want to save the files
 parent_directory = Path("D:/Programming/Stock Selections/Stock-Selection-Using-ML/Collect_Stock_Financial_Data")
