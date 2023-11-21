@@ -24,10 +24,9 @@ from datetime import datetime, timedelta
 #            'NESTLEIND.NS', 'NTPC.NS', 'ONGC.NS', 'POWERGRID.NS', 'RELIANCE.NS', 'SBILIFE.NS', 'SBIN.NS', 'SUNPHARMA.NS', 'TATACONSUM.NS', 'TATAMOTORS.NS', 'TATASTEEL.NS', 'TCS.NS', 'TECHM.NS', 
 #            'TITAN.NS', 'ULTRACEMCO.NS', 'UPL.NS', 'WIPRO.NS']
 
-tickers = ['IDFCFIRSTB.NS']
-
+tickers = ['MSFT']
 # Specify the base folder where stock folders will be created
-file_path = Path('D:\Programming\Stock Selections\Stock-Selection-Using-ML\Collect_Stock_Financial_Data\Indian_Stock')
+file_path = Path('D:/Programming/Stock Selections/Stock-Selection-Using-ML/Collect_Stock_Financial_Data/US_Stock')
 
 # Iterate over each stock
 for ticker in tickers:
