@@ -1,0 +1,3 @@
+i want asystem where user find the top 10 under perormance stock according to their choice(Data store in my local machine - Directory = "D:\Programming\Stock Selections\Stock-Selection-Using-ML\Collect_Stock_Historical_Data" for the data security all the historical data store different differnt folder) , but their 2 option present 
+1. Technical Analysis basis [In technical their are multiple parameters -timeframe : 1 h, MA > 21, MA21 cross above MA 50, then price break out above the resistence level, RSI > 40, MACD cross over, Price above the VWAP.] .And also used ML algorithm what you want......... And depend on the strategy the system backtest the last 5 years data and calculate its accuracy 
+

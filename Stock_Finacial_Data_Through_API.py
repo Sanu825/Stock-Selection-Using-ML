@@ -1,16 +1,18 @@
 import requests
 import json
+import pandas
 from pathlib import Path
 from datetime import datetime, timedelta
 
 # Replace 'YOUR_API_KEY' with your actual Alpha Vantage API key
-api_key = '7BWY5GGU94GAB627'
+api_key = '9XW0SN1H49A7N4KH'
 
 # Replace 'AAPL' with the stock symbol you are interested in
-symbols = ['HDB','IBN']
+symbols = ['UNH', 'MSFT', 'GS', 'HD', 'MCD', 'AMZN', 'CAT', 'V', 'CRM', 'BA', 'HON', 'AAPL', 'TRV', 'AXP', 'WMT', 'IBM', 'JPM', 'PG', 'JNJ', 'CVX', 'NKE']
+# symbols = ['MRK', 'DIS', 'MMM', 'KO', 'DOW', 'CSCO', 'INTC', 'VZ', 'WBA']
 
 # Specify the parent directory path where you want to save the files
-parent_directory = Path("D:/Programming/Stock Selections/Stock-Selection-Using-ML/Collect_Stock_Financial_Data")
+parent_directory = Path("D:/Programming/Stock Selections/Stock-Selection-Using-ML/Collect_Stock_Financial_Data/US_Stock")
 
 
 
