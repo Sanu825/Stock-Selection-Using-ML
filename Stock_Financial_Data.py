@@ -25,7 +25,8 @@ from datetime import datetime, timedelta
 #            'TITAN.NS', 'ULTRACEMCO.NS', 'UPL.NS', 'WIPRO.NS']
 
 # Us_Stock 
-tickers = ['UNH', 'MSFT', 'GS', 'HD', 'MCD', 'AMZN', 'CAT', 'V', 'CRM', 'BA', 'HON', 'AAPL', 'TRV', 'AXP', 'WMT', 'IBM', 'JPM', 'PG', 'JNJ', 'CVX', 'NKE', 'MRK', 'DIS', 'MMM', 'KO', 'DOW', 'CSCO', 'INTC', 'VZ', 'WBA']
+tickers = ['CRM']
+# tickers = ['UNH', 'MSFT', 'GS', 'HD', 'MCD', 'AMZN', 'CAT', 'V', 'CRM', 'BA', 'HON', 'AAPL', 'TRV', 'AXP', 'WMT', 'IBM', 'JPM', 'PG', 'JNJ', 'CVX', 'NKE', 'MRK', 'DIS', 'MMM', 'KO', 'DOW', 'CSCO', 'INTC', 'VZ', 'WBA']
 # Specify the base folder where stock folders will be created
 file_path = Path('D:/Programming/Stock Selections/Stock-Selection-Using-ML/Collect_Stock_Financial_Data/US_Stock')
 
