@@ -1,10 +1,10 @@
 
 import os
 import csv
-import shutil
+# import shutil   # used for high-level file operations, like copying files or directories, moving files, etc. 
 
-input_directory = 'D:\Programming\Stock Selections\Stock-Selection-Using-ML\Collect_Stock_Financial_Data'
-output_directory = 'D:\Programming\Stock Selections\Stock-Selection-Using-ML\Processing_Financial_Data'
+input_directory = 'D:\Programming\Stock Selections\Stock-Selection-Using-ML\Collect_Stock_Historical_Data'
+output_directory = 'D:\Programming\Stock Selections\Stock-Selection-Using-ML\Processing_Historicial_Data'
 
 # Walk through the directory and its subdirectories
 for root, dirs, files in os.walk(input_directory):
@@ -37,7 +37,7 @@ for root, dirs, files in os.walk(input_directory):
                         if not row[i]:
                             row[i] = '0.0'
                         elif '.' in row[i]:
-                            decimal_part = row[i].split('.')[1][:4]
+                            decimal_part = row[i].split('.')[1][:2]
                             row[i] = f"{row[i].split('.')[0]}.{decimal_part}"
 
                     # Write the updated row to the output file
