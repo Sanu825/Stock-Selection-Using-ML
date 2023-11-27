@@ -1,10 +1,8 @@
-
 import os
 import csv
-# import shutil   # used for high-level file operations, like copying files or directories, moving files, etc. 
 
 input_directory = 'D:\Programming\Stock Selections\Stock-Selection-Using-ML\Collect_Stock_Historical_Data'
-output_directory = 'D:\Programming\Stock Selections\Stock-Selection-Using-ML\Processing_Historicial_Data'
+output_directory = 'D:\Programming\Stock Selections\Stock-Selection-Using-ML\Processing_Historical_Data'
 
 # Walk through the directory and its subdirectories
 for root, dirs, files in os.walk(input_directory):
@@ -12,15 +10,16 @@ for root, dirs, files in os.walk(input_directory):
         if csv_file.endswith('.csv'):
             input_file_path = os.path.join(root, csv_file)
             
-            # Get the relative path to the input file
-            relative_path = os.path.relpath(input_file_path, input_directory)
+            # Get the stock name (remove the extension _historical_data.csv)
+            stock_name = os.path.splitext(csv_file)[0].replace('_historical_data', '')
             
             # Create the corresponding subdirectory in the output directory
-            output_subdirectory = os.path.join(output_directory, os.path.dirname(relative_path))
+            relative_path = os.path.relpath(root, input_directory)
+            output_subdirectory = os.path.join(output_directory, relative_path)
             os.makedirs(output_subdirectory, exist_ok=True)
             
             # Construct the output file path in the new directory structure
-            output_file_path = os.path.join(output_subdirectory, f"{csv_file}")
+            output_file_path = os.path.join(output_subdirectory, f"{stock_name}.csv")
 
             with open(input_file_path, 'r') as input_file, open(output_file_path, 'w', newline='') as output_file:
                 reader = csv.reader(input_file)
