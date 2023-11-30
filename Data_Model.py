@@ -5,10 +5,9 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score
 
-directory = "D:/Programming/Stock Selections/Stock-Selection-Using-ML/Processing_Historical_Data"
 
-def load_stock_data(symbol):
-    file_path = os.path.join(directory, symbol, f"{symbol}.csv")
+def load_stock_data(directory, symbol):
+    file_path = os.path.join(directory, symbol)
     if os.path.exists(file_path):
         return pd.read_csv(file_path)
     else:
@@ -49,6 +48,8 @@ def train_ml_model(data, algorithm='RandomForest'):
 
 # Example usage for backtesting on a particular stock (e.g., AAPL)
 symbol = "AAPL"
+directory = 'D:\Programming\Stock Selections\Stock-Selection-Using-ML\Processing_Historical_Data\Dow_Jones' + '\\' + symbol +'.csv'
+
 stock_data = load_stock_data(symbol)
 
 if stock_data is not None:
