@@ -15,14 +15,10 @@ This project aims to predict stock prices using machine learning techniques, spe
    ```bash
    git clone https://github.com/yourusername/Stock-Selection-Using-ML.git
    ```
-2. 1. Navigate to the project directory:
-
-   ```html
-   <pre style="background-color:black;"><code class="language-bash">
+2. Navigate to the project directory:
+   ```bash
    cd Stock-Selection-Using-ML
-   </code></pre>
    ```
-
 3. Install the required libraries:
    ```bash
    pip install -r requirements.txt
@@ -52,8 +48,3 @@ Contributions are welcome! If you have any ideas for improvements or new feature
 ## License
 
 This project is licensed under the GNU General Public License v3.0 License. See the [LICENSE](LICENSE) file for details.
-
-```
-
-Feel free to customize the README file further based on your project's specifics and requirements.
-```
