@@ -47,7 +47,7 @@ def train_ml_model(data, algorithm='RandomForest'):
     return model, accuracy
 
 # Example usage for backtesting on a particular stock (e.g., AAPL)
-symbol = "AAPL"
+symbol = "IBM"
 directory = 'D:\Programming\Stock Selections\Stock-Selection-Using-ML\Processing_Historical_Data\Dow_Jones' + '\\' + symbol +'.csv'
 
 stock_data = load_stock_data(symbol)
