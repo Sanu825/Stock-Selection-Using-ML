@@ -15,10 +15,14 @@ This project aims to predict stock prices using machine learning techniques, spe
    ```bash
    git clone https://github.com/yourusername/Stock-Selection-Using-ML.git
    ```
-2. Navigate to the project directory:
-   ```bash
+2. 1. Navigate to the project directory:
+
+   ```html
+   <pre style="background-color:black;"><code class="language-bash">
    cd Stock-Selection-Using-ML
+   </code></pre>
    ```
+
 3. Install the required libraries:
    ```bash
    pip install -r requirements.txt
